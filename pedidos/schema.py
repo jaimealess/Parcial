@@ -13,7 +13,7 @@ class PedidoNode(DjangoObjectType):
         model = Pedido
         # Permite un filtrado mas avanzado
         filter_fields = {
-            'cliente': ['exact', 'icontains', 'istartswith'],
+            'cliente': ['exact', 'icontains'],
             'pedido': ['exact', 'icontains'],
             'total': ['exact'],
         }
